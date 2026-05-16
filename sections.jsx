@@ -200,12 +200,11 @@ function PortraitCard({ t }) {
   return (
     <div className="portrait-card">
       <div className="portrait-frame">
-        <image-slot
-          id="portrait-main"
-          shape="rect"
-          placeholder={t.locale === "ar" ? "ضع صورة الأستاذ هنا" : t.locale === "en" ? "Drop the lawyer's photo here" : "Glisser la photo de Maître Elshall"}
-          style={{ width: "100%", height: "100%", display: "block" }}
-        ></image-slot>
+        <img
+          src="assets/image-lawyer.png"
+          alt="Maître Abdallah Elshall"
+          className="portrait-img"
+        />
         <div className="portrait-corner tl" />
         <div className="portrait-corner tr" />
         <div className="portrait-corner bl" />
