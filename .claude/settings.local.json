@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git *)"
+      "Bash(git *)",
+      "Bash(netlify status *)",
+      "Bash(netlify sites:create --name cabinet-elshall --disable-linking)",
+      "Bash(netlify link *)",
+      "Bash(mv \"WhatsApp Image 2026-05-16 at 15.24.20.jpeg\" padel-prestige.jpeg)",
+      "Bash(mv \"WhatsApp Image 2026-05-16 at 15.27.43.jpeg\" docteur-pizz.jpeg)"
     ]
   }
 }

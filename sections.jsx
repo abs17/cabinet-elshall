@@ -334,28 +334,16 @@ function ClientGlyph({ name, mark }) {
   }
   if (name === "Padel Prestige") {
     return (
-      <svg viewBox="0 0 120 120" className="glyph">
-        {/* shield outline */}
-        <path d="M60 10 L100 22 L100 64 Q100 96 60 112 Q20 96 20 64 L20 22 Z"
-              fill="none" stroke="currentColor" strokeWidth="0.8" opacity="0.55" />
-        <path d="M60 18 L94 28 L94 64 Q94 92 60 105 Q26 92 26 64 L26 28 Z"
-              fill="none" stroke="currentColor" strokeWidth="0.4" opacity="0.3" />
-        {/* crossed padel rackets — geometric, original */}
-        <g stroke="currentColor" strokeWidth="1.3" fill="none" strokeLinecap="round">
-          <ellipse cx="48" cy="50" rx="11" ry="13" transform="rotate(-30 48 50)" />
-          <line x1="58" y1="60" x2="70" y2="78" transform="rotate(-30 48 50)" />
-          <ellipse cx="72" cy="50" rx="11" ry="13" transform="rotate(30 72 50)" />
-          <line x1="62" y1="60" x2="50" y2="78" transform="rotate(30 72 50)" />
-        </g>
-        {/* ball */}
-        <circle cx="60" cy="58" r="3" fill="currentColor" />
-        <text x="60" y="96" textAnchor="middle"
-              fontFamily="Cormorant Garamond, serif"
-              fontSize="11" fontWeight="600" fill="currentColor" letterSpacing="2">PADEL</text>
-        <text x="60" y="107" textAnchor="middle"
-              fontFamily="JetBrains Mono, monospace"
-              fontSize="6.5" fill="currentColor" letterSpacing="3" opacity="0.7">PRESTIGE</text>
-      </svg>
+      <div className="glyph glyph-img">
+        <img src="assets/padel-prestige.jpeg" alt="Padel Prestige" />
+      </div>
+    );
+  }
+  if (name === "Docteur Pizz") {
+    return (
+      <div className="glyph glyph-img">
+        <img src="assets/docteur-pizz.jpeg" alt="Docteur Pizz" />
+      </div>
     );
   }
   // fallback monogram
